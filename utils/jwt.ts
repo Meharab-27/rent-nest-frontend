@@ -10,14 +10,14 @@ const verifyToken = (token: string, secret: string) => {
             success: true,
             data: verifiedToken
         };
-//     } catch (error: any) {
-//         console.log("Token verification failed:", error);
-//         return {
-//             success: false,
-//             error: error.message
-//         }
-//     }
-// }
+    } catch (error: any) {
+        console.log("Token verification failed:", error);
+        return {
+            success: false,
+            error: error.message
+        }
+    }
+}
 
 
 export const jwtUtils = {

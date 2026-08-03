@@ -13,7 +13,7 @@ const verifyToken = (token: string, secret: string) => {
         console.log("Token verification failed:", error);
         return {
             success: false,
-            error: error.message
+            // error: error.message
         }
     }
 }
